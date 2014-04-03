@@ -30,6 +30,7 @@ public class main {
 	    final JMenu _mdrop = new JMenu("Drop");
 	    final JMenu _mitem = new JMenu("Item");
 	    final JMenu _mnpc = new JMenu("Npc");
+	    final JMenu _mmob = new JMenu("Mob");
 
         // on set le jmenubar
 	    taktool.setJMenuBar(menu);
@@ -37,11 +38,13 @@ public class main {
 	    _mdrop.setIcon(Loading.icon_drop);
 	    _mitem.setIcon(Loading.icon_item);
 	    _mnpc.setIcon(Loading.icon_npc);
+	    _mmob.setIcon(Loading.icon_mob);
 	    // on add le menu
 	    menu.add(_mtitle);
 	    menu.add(_mdrop);
 	    menu.add(_mitem);
 	    menu.add(_mnpc);
+	    menu.add(_mmob);
 
 // fenetre
 	    taktool.setVisible(true);
@@ -91,7 +94,16 @@ public class main {
 	    		public void menuCanceled(MenuEvent e) {}  
 	    	}  
 	    	);  
-
+//  si il clique sur le bouton mob du menu
+	    _mmob.addMenuListener(  
+	    	new MenuListener() {  
+	    		public void menuSelected(MenuEvent e) {  
+	    			Mob mob = new Mob();
+	    		}  
+	    		public void menuDeselected(MenuEvent e) {}  
+	    		public void menuCanceled(MenuEvent e) {}  
+	    	}  
+	    	);  
 	}
 	public static void writeFile(String filename,String txt){
 		File file = new File("_generate/"+filename+"");

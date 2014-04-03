@@ -36,6 +36,7 @@ public class Loading {
 	static ImageIcon icon_npc = new ImageIcon("data/icone_npc.png");
 	static ImageIcon icon_drop = new ImageIcon("data/icone_ressource.png");
 	static ImageIcon icon_item = new ImageIcon("data/icone_cape.png");
+	static ImageIcon icon_mob = new ImageIcon("data/mob.png");
 	// other
 	static JLabel logo_takylo = new JLabel(new ImageIcon("data/tlogo.png"));
 	static JLabel image = new JLabel( new ImageIcon( "data/logo.png"));

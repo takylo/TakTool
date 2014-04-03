@@ -33,7 +33,7 @@ public class Npc {
 
 
         // on set un GridLayor
-		npc_creator.setLayout(new GridLayout(8,2));
+		npc_creator.setLayout(new GridLayout(6,2));
         // nom du npc
 		npc_creator.add(nameNpcLabel);
 		npc_creator.add(nameNpc);
