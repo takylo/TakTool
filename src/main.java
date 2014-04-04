@@ -1,20 +1,11 @@
-import java.awt.Color;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.event.MenuEvent;
@@ -55,14 +46,14 @@ public class main {
 	    taktool.setIconImage(Loading.img.getImage());
 	    taktool.setLocationRelativeTo(null);
 	    taktool.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    try {
-	    	UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-	    	SwingUtilities.updateComponentTreeUI(taktool);
-	    } catch (Exception e1) {
-	    	JOptionPane.showMessageDialog(null, "Probleme d'interface graphique", "ERREUR", JOptionPane.WARNING_MESSAGE);
+	   
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+			SwingUtilities.updateComponentTreeUI(taktool);
+		} catch (Exception e1) {
+			JOptionPane.showMessageDialog(null, "Probleme d'interface graphique", "ERREUR", JOptionPane.WARNING_MESSAGE);
 
-	    }
-
+		}
 //  si il clique sur le bouton title du menu
 	    _mtitle.addMenuListener(  
 	    	new MenuListener() {  

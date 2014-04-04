@@ -27,6 +27,7 @@ public class Item {
 		final JComboBox _itemSelected = new JComboBox();
 		final JComboBox _stats_cat = new JComboBox();
 		// les categorie d'item
+
 		_list.addItem("Coiffe");
 		_list.addItem("Cape");
 		_list.addItem("Amulette");
